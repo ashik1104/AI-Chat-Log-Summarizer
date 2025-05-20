@@ -3,11 +3,11 @@ Summaries for Chat Logs in Folder:
 Summary for chat_1.txt:
 - The conversation had 2 exchanges.
 - Total messages: 4 (User: 2, AI: 2).
-- Conversation about python, use, tell.
-- Most common keywords: python, use, tell, sure, popular.
+- Conversation about python, use, ai.
+- Most common keywords: python, use, ai, analysis, known.
 
 Summary for chat_2.txt:
 - The conversation had 2 exchanges.
 - Total messages: 4 (User: 2, AI: 2).
-- Conversation about explain, assist, today.
-- Most common keywords: explain, assist, today, certainly, field.
+- Conversation about learning, machine, ai.
+- Most common keywords: learning, machine, ai, allows, data.
