@@ -63,7 +63,7 @@ Rejects chat logs that:
 
 ## ✅ Requirements
 
-- Python 3.6+
+- Python 3.9
 - NLTK  
   `pip install nltk`
 - scikit-learn  
