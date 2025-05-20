@@ -36,5 +36,20 @@ class ChatSummarizer:
         )
         return summary
     
+    def summarize_multiple(self, folder_path):
+        """Summarize all .txt chat logs in a folder."""
+        txt_files = glob.glob(os.path.join(folder_path, "*.txt"))
+        if not txt_files:
+            return None
+
+        summaries = []
+        for file_path in txt_files:
+            if self.parser.parse(file_path):
+                corpus = [' '.join(self.parser.get_all_messages())]
+                summary = self.summarize(file_path, corpus=corpus)
+                if summary:
+                    summaries.append(summary)
+        return "\n\n".join(summaries)
+    
 if __name__ == "__main__":
     pass
