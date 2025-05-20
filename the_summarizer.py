@@ -51,5 +51,8 @@ class ChatSummarizer:
                     summaries.append(summary)
         return "\n\n".join(summaries)
     
+    def receive_invalid_files(self):
+        return self.parser.get_invalid_files()
+    
 if __name__ == "__main__":
     pass

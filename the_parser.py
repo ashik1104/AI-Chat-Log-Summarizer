@@ -11,6 +11,7 @@ class ChatLogParser:
         self.user_messages = []
         self.ai_messages = []
         self.lines = []
+        self.invalid_files = []
 
     def parse(self, file_path):
         try:
@@ -18,6 +19,10 @@ class ChatLogParser:
                 self.lines = file.readlines()
         except FileNotFoundError:
             print(f"Error: File {file_path} not found.")
+            return False
+    
+        if not self.lines or not self.lines[0].startswith('User:'):
+            self.invalid_files.append(file_path)
             return False
 
         self.user_messages = []
@@ -59,7 +64,10 @@ class ChatLogParser:
 
     def get_all_messages(self):
         return self.user_messages + self.ai_messages
+    
+    def get_invalid_files(self):
+        return self.invalid_files
 
 
-if __name__ == "__main__":
-    pass
+# if __name__ == "__main__":
+#     pass

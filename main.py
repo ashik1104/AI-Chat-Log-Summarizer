@@ -2,7 +2,6 @@ import os
 import shutil
 from the_summarizer import ChatSummarizer
 
-
 def main():
     summarizer = ChatSummarizer()
     folder_path = "chat_logs"
@@ -50,6 +49,12 @@ def main():
             with open(os.path.join(output_dir, "single_summary.txt"), 'w', encoding='utf-8') as f:
                 f.write("Summary for Single Chat Log:\n\n")
                 f.write(single_summary)
+    
+    invalid_files = summarizer.receive_invalid_files()
+    if invalid_files:
+        print("\n\nList of Files that contains invalid conversation:\n")
+        for cnt, inv in enumerate(invalid_files):
+            print(f"\t{cnt + 1}. {inv}")
 
     if not folder_summaries and not single_summary:
         print("\nNo .txt files were found either within the 'chat_log' directory or in the current working directory.")
