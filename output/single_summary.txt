@@ -1,0 +1,7 @@
+Summary for Single Chat Log:
+
+Summary for chat.txt:
+- The conversation had 3 exchanges.
+- Total messages: 6 (User: 3, AI: 3).
+- Conversation about blockchain, secure, used.
+- Most common keywords: blockchain, secure, used, many, block.

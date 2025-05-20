@@ -1,0 +1,7 @@
+User: What is blockchain?
+AI: Blockchain is a digital ledger that records transactions across many computers in a secure and transparent way.
+User: Why is it considered secure?
+AI: Because once a block is added to the chain, it’s nearly impossible to change. Each block is linked to the previous one using cryptography.
+User: Is blockchain only used for cryptocurrency?
+AI: No, it’s also used in supply chain management, healthcare, voting systems, and many other fields for secure data tracking.
+
