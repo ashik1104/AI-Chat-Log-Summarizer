@@ -117,7 +117,7 @@ Summary for Single Chat Log:
 ```
 
 ## 📸 Screenshot
-Displays output summaries in the terminal when both multiple chat log files are present in the 'chat_logs' folder and a single chat.txt file exists in the project root directory.
+Displays output summaries in the terminal when multiple chat log files are present in the 'chat_logs' directory, as well as when a single chat.txt file exists in the project root directory. Invalid files, if any, are listed at the end of the output.
 
 ![Chat Log Summary Example](https://github.com/ashik1104/AI-Chat-Log-Summarizer/blob/9410afc72721a711eb308be3866e3de86165799b/Screenshot.png)
 
